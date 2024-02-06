@@ -47,25 +47,25 @@
 
         <input class="form__input_" type="text" name="cardholder" maxlength="18" placeholder="e.g. Jane Appleseed" id="cardholder">
 
-        <div class="form__input-cardholder--error error"></div>
+        <div class="form__input-cardholder--error error">only character type ABC</div>
         <label class="form__input" for="cardumber">Card Number</label>
         <input class="form__input_" type="text" name="cardnumber" maxlength="19" placeholder="e.g. 1234 5678 9123 0000"
           id="cardnumber">
-        <div class="form__input-cardnumber--error error"></div>
+        <div class="form__input-cardnumber--error error">only character type Number</div>
 
         <div class="form__date-cvc">
           <label class="form__input" for="">Exp. Date (MM/YY)</label>
           <label class="form__input" for="">CVC</label>
           <div class="form__date">
             <input class="form__input_" type="text" name="cardmonth" maxlength="2" placeholder="MM" id="cardmonth">
-            <input class="form__input_" type="text" name="cardyear" maxlength="4" placeholder="YY" id="cardyear">
+            <input class="form__input_" type="text" name="cardyear" maxlength="2" placeholder="YY" id="cardyear">
           </div>
           <input class="form__input_" type="text" maxlength="3" name="cardcvc" placeholder="e.g 123" id="cardcvc">
           <div class="form__error-container">
-            <div class="form__input-mm-error error"></div>
-            <div class="form__input-yy-error error"></div>
+            <div class="form__input-mm-error error">only character type date</div>
+            <div class="form__input-yy-error error">only character type date</div>
           </div>
-          <div class="form__input-cvc--error error"></div>
+          <div class="form__input-cvc--error error">only character type "ABC 123"</div>
         </div>
         <input type="submit" value="confirm" class="form_submit" id="form_submit">
       </form>
