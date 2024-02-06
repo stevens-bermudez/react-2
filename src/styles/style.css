@@ -37,7 +37,9 @@ body {
     .back__container {
 
         background-image: url(/images/bg-main-desktop.png);
-        height: auto;   
+        height: auto;
+        margin-left: -1%;
+
 
     }
 
